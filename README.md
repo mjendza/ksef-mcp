@@ -126,6 +126,8 @@ Assistant: [calls ksef_get_invoice with the KSeF reference number]
          -> Returns full invoice XML with seller, buyer, line items, amounts.
 ```
 
+![demo](./github-copilot.png)
+
 ## Local Development
 
 ### Setup
