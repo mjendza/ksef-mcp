@@ -23,7 +23,11 @@ jobs:
 
       - run: npm ci
 
+<<<<<<< HEAD
       - run: npm test
+=======
+      - run: npm run build
+>>>>>>> cb75206 (fixes)
 
   publish:
     needs: build
