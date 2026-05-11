@@ -2,6 +2,12 @@
 
 MCP server for read-only access to Polish KSeF (Krajowy System e-Faktur / National e-Invoice System).
 
+## My DEV Configuration
+- Build 
+- enter your NIP, token, and environment in `claude-code/.mcp.json` (or use environment variables directly)
+- Restart Claude Code to pick up the new MCP server configuration
+- Run Commands like `/last-received` 
+
 ## Configuration
 
 Add to your MCP client configuration (e.g. `claude_desktop_config.json`):
