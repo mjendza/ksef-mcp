@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "MCP server for read-only access to Polish KSeF (Krajowy System e-Faktur)",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjendza/ksef-mcp"
+  },
   "bin": {
     "ksef-mcp": "./dist/index.js"
   },
