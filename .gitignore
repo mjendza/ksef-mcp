@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 node_modules/
 dist/
 .env
@@ -6,9 +5,5 @@ dist/
 *.p12
 *.pfx
 *.secret
-=======
-﻿/node_modules
-/dist
-/.idea
-*.secret
->>>>>>> cb75206 (fixes)
+
+
