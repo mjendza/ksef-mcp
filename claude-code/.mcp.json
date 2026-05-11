@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+   "Ksef-Mcp": {
+			"command": "node",
+			"args": [
+				"../dist/index.js"
+			],
+			"env": {
+			"KSEF_NIP": "",
+			"KSEF_TOKEN": "",
+			"KSEF_ENV": ""
+			}
+      	}	
+  }
+}
