@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { loadConfig } from "./config.js";
@@ -9,6 +12,10 @@ import { KsefSession } from "./ksef/session.js";
 import { KsefInvoices } from "./ksef/invoices.js";
 import { registerAllTools } from "./tools/index.js";
 import { logger } from "./logger.js";
+
+const pkg = JSON.parse(
+  readFileSync(join(dirname(fileURLToPath(import.meta.url)), "..", "package.json"), "utf8"),
+) as { version: string };
 
 async function main(): Promise<void> {
   logger.info("=== KSeF MCP Server Starting ===");
@@ -24,7 +31,7 @@ async function main(): Promise<void> {
 
   const server = new McpServer({
     name: "ksef-mcp",
-    version: "0.1.0",
+    version: pkg.version,
   });
 
   registerAllTools(server, auth, session, invoices);

@@ -19,7 +19,7 @@ Add to your MCP client configuration (e.g. `claude_desktop_config.json`):
       "command": "npx",
       "args": [
         "-y",
-        "ksef-mcp@latest"
+        "@mjendza/ksef-mcp@latest"
       ],
       "env": {
         "KSEF_NIP": "1234567890",
@@ -57,7 +57,7 @@ Add to your MCP client configuration (e.g. `claude_desktop_config.json`):
   "mcpServers": {
     "ksef-test": {
       "command": "npx",
-      "args": ["-y", "ksef-mcp@latest"],
+      "args": ["-y", "@mjendza/ksef-mcp@latest"],
       "env": {
         "KSEF_NIP": "1234567890",
         "KSEF_TOKEN": "your-test-token",
@@ -75,7 +75,7 @@ Add to your MCP client configuration (e.g. `claude_desktop_config.json`):
   "mcpServers": {
     "ksef": {
       "command": "npx",
-      "args": ["-y", "ksef-mcp@latest"],
+      "args": ["-y", "@mjendza/ksef-mcp@latest"],
       "env": {
         "KSEF_NIP": "your-company-nip",
         "KSEF_TOKEN": "your-production-read-only-token",
