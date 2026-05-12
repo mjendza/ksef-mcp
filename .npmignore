@@ -1,0 +1,12 @@
+.env
+.env.*
+*.pem
+*.p12
+*.pfx
+*.secret
+*.test.js
+*.test.js.map
+*.test.d.ts
+**/*.test.js
+**/*.test.js.map
+**/*.test.d.ts
